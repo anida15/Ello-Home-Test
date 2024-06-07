@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+
+ .navholder{
+  background-color: rgb(40, 35, 85);
+   
+ }
+ @media screen and (min-width: 1090px) { 
+  .navholder{
+    color: rgb(239, 239, 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+    background-color: rgb(40, 35, 85);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  .navigation {
+   display: flex; 
+  } 
+  .navlist {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  .navNames {
+    color: rgb(242, 236, 242);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
+  .navIcons {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 7%;
+    height: 7%;
+     
+  }
+}
+
+
+@media screen and (max-width: 1088px) { 
+  .navholder {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;  
+  }
+}
+
+ 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+ 
+ 
+
+
+ 
