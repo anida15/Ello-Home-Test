@@ -132,9 +132,9 @@ function App() {
           <p className="text-xl text-gray-700 font-mono">No books found</p>
         </div>
       ) : (
-        <div className="device-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mb-4 p-3">
+        <div className="device-content shadow-3xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mb-4 p-3">
           {filteredBooks.map((book, index) => (
-            <div key={index} className="device flex flex-col items-center border rounded-lg bg-white shadow-3xl">
+            <div key={index} className="devices flex flex-col items-center border rounded-lg bg-white shadow-3xl">
               <img className="  w-80 h-80 pt-3 " src={book.coverPhotoURL} alt={book.title} />
               <div class="bg-gray-100 rounded-lg p-6 shadow-md h-36 self-start w-full">
                   <p class="text-base text-gray-800 font-semibold">Title: <span class="text-gray-600">{book.title}</span></p>
@@ -142,7 +142,7 @@ function App() {
                   <p class="text-base text-gray-700 font-normal">Reading Level: <span class="font-semibold">{book.readingLevel}</span></p>
               </div>
               <div className="border rounded cursor-pointer bg-yellow-500 p-3 flex justify-center items-center flex-row">
-                <span onClick={handIndexHolder(index)} className="ml-2">ADD TO READING LIST</span>
+                <span onClick={handIndexHolder(index)} className="ml-2">ADD TO STUDENTS</span>
               </div>
             </div>
           ))}
