@@ -70,11 +70,11 @@ function App() {
 
     setIndexHolder(index);
     setAlertmsg(true);
-    setMessage('Added '+ books[index].author + ' Book`s to List'  );
+    setMessage('Added '+ filteredBooks[index].author + ' Book`s to List'  );
   }
 
   const handAddBook = (index) => () => {
-  console.log('Add book', books[index]);
+  console.log('Add book', filteredBooks[index]);
   setAlertmsg(true);
   
 
@@ -85,7 +85,7 @@ function App() {
     existingBooks = JSON.parse(existingBooksJSON);
   }
 
-  existingBooks.push(books[index]);
+  existingBooks.push(filteredBooks[index]);
   const updatedBooksJSON = JSON.stringify(existingBooks);
   localStorage.setItem('books', updatedBooksJSON);
   setAlertmsg(false);

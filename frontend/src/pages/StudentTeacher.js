@@ -92,7 +92,7 @@ function StudentTeacher() {
     <div className="content flex-grow">
       < SideBar />
       <div className="home-brand-name">
-        <p className={`${ removeButton ? 'block':'hidden'} p-3 text-white bg-gradient-to-r from-gray-900 text-xl text-gray-700 font-mono font-bold uppercase`}>
+        <p className={`${ removeButton ? 'block':'hidden'} p-3 text-white   text-xl text-gray-700 font-mono font-bold uppercase`}>
           Teachers Assigning List
         </p>
         <p className={`${ removeButton ? 'hidden':'block'} p-3 text-white bg-gradient-to-r from-gray-900 text-xl text-gray-700 font-mono font-bold uppercase`}>
